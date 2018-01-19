@@ -61,6 +61,26 @@
                             </div>
                         </div>
 
+                        <div class="form-group row">
+                            <label for="age" class="col-form-label col-md-4">Age</label>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control{{ $errors->has('age') ? ' is-invalid' : '' }}" id="age" name="age" value="{{ old('age') }}" placeholder="Age">
+                                @if ($errors->has('age'))
+                                <span class="invalid-feedback">{{ $errors->first('age') }}</span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="facebook_link" class="col-form-label col-md-4">Facebook link</label>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control{{ $errors->has('facebook_link') ? ' is-invalid' : '' }}" id="facebook_link" name="facebook_link" value="{{ old('facebook_link') }}" placeholder="Facebook link">
+                                @if ($errors->has('facebook_link'))
+                                <span class="invalid-feedback">{{ $errors->first('facebook_link') }}</span>
+                                @endif
+                            </div>
+                        </div>
+
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
                                 <button type="submit" class="btn btn-primary">

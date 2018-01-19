@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="/css/login.css">
     <link rel="stylesheet" type="text/css" href="/css/profile.css">
 
-    <title>name of user</title>
+    <title>{{ $user->name }}</title>
     <style media="screen">
     .nav-text{
         color:white!important;
@@ -85,12 +85,13 @@
                                     </div>
                                     <div class="col-12 col-md-6" style="font-family: 'Open Sans Condensed', sans-serif; font-size:3vh; border-left: solid; border-color:#262626; "  >
                                         <span><b>Age:</b> </span>
-                                        <span>20 Year Old</span>
+                                        <!-- <span>{{ $user->age }}</span> -->
+                                        <span>20</span>
                                     </div>
-                                    <div class="col-12 col-md-6" style="font-family: 'Open Sans Condensed', sans-serif; font-size:3vh; border-left: solid; border-color:#262626; "  >
-                                        <span><b>Phone:</b> </span>
-                                        <span>+91 - 8950123811</span>
-                                    </div>
+                                    <!-- <div class="col-12 col-md-6" style="font-family: 'Open Sans Condensed', sans-serif; font-size:3vh; border-left: solid; border-color:#262626; "  >
+                                        <span><b>Facebook Link</b> </span>
+                                        <span><a href="{{$user->facebook_link}}">{{$user->facebook_link}}</a></span>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
