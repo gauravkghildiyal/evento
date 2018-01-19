@@ -15,8 +15,13 @@
     <link rel="stylesheet" type="text/css" href="/css/profile.css">
 
     <title>name of user</title>
+    <style media="screen">
+    .nav-text{
+        color:white!important;
+    }
+    </style>
 </head>
-<body style="background-color:linear-gradient(to left, #ECE9E6, #ECE9E6);">
+<body style="background-image:url('/images/background.jpg')">
 
     <!-- navbar starts-->
     <nav class="navbar navbar-expand-lg fixed-top navbar-light navbar-style">
@@ -28,17 +33,11 @@
         <div class="collapse navbar-collapse"  id="navbarSupportedContent">
             <ul style="right:0px; position:absolute; color:#004085" class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link nav-text" style="color:#004085" href="">NOTIFICATIONS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-text" style="color:#004085" href="">EVENTS</a>
+                    <a class="nav-link nav-text" style="" href="{{ route('dashboard') }}">Dashboard</a>
                 </li>
                 <!-- <li class="nav-item">
                 <a class="nav-link nav-text" href="gallery.html">GALLERY</a>
             </li> -->
-            <li class="nav-item sign-up-border">
-                <a class="nav-link nav-text" style="color:white" href="">SIGN UP</a>
-            </li>
         </ul>
 
     </div>
@@ -56,10 +55,8 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="col-12" style="padding:20px; background:linear-gradient(to left, #0f0c29, #302b63, #24243e);height: 30vh">
-                                        <div class="image-box" style="background-image: url(images/profile.jpg);background-repeat:no-repeat;background-size:contain;position: absolute;margin-top:15vh;left:0;right:0;border-color:white;border-style:solid;border-width:1.5px;box-shadow: 0 2px 3px rgba(0,0,0,.2);">
-
+                                        <div class="image-box" style="background-image: url(/images/profile-logo.svg);background-repeat:no-repeat;background-size:contain;position: absolute;margin-top:15vh;left:0;right:0;border-color:white;border-style:solid;border-width:1.5px;box-shadow: 0 2px 3px rgba(0,0,0,.2);background-color:white;">
                                         </div>
-
                                     </div>
                                 </div>
                                 <div class="row">

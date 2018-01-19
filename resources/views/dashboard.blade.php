@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="/css/bootstrap-grid.css">
     <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.css" > -->
     <link rel="stylesheet" type="text/css" href="/css/jquery.fullpage.min.css">
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
 
     <!-- <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script> -->
@@ -29,7 +29,7 @@
           <div class="collapse navbar-collapse"  id="navbarSupportedContent">
             <ul style="right:0px; position:absolute; color:#004085" class="navbar-nav">
               <li class="nav-item">
-                  <a class="nav-link nav-text" style="color:#004085" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                  <a class="nav-link nav-text" style="color:white" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                       Logout
                   </a>
                   <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -40,7 +40,7 @@
                 <a class="nav-link nav-text" href="gallery.html">GALLERY</a>
               </li> -->
               <li class="nav-item sign-up-border" style="font-size: 40px; color:white">
-                <i class="fa fa-user" aria-hidden="true"></i>
+                  <a href="{{ route('profile',['id'=>auth()->user()->id]) }}" style="color:white"><i class="fa fa-user" aria-hidden="true"></i></a>
               </li>
             </ul>
 
