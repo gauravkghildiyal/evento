@@ -78,7 +78,7 @@
                                             <span>{{ $event->name }}</span>
                                         </div>
                                         <div class="col-12" style="padding-top:30px; padding-bottom:30px; font-family:'Open Sans Condensed', sans-serif; font-size:30px">
-                                            <span>12.10.2018</span>
+                                            <span>{{ $event->date }}</span>
                                         </div>
                                     </div>
                                 </div>
