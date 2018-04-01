@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap-grid.css">
     <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.css" > -->
-    <link rel="stylesheet" type="text/css" href="css/jquery.fullpage.min.css">
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/jquery.fullpage.min.css">
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <!-- <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script> -->
@@ -28,7 +28,7 @@
           <div class="collapse navbar-collapse"  id="navbarSupportedContent">
             <ul style="right:0px; position:absolute; color:#004085" class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link nav-text" style="color:#004085" href="#background-2">EVENTS</a>
+                <a class="nav-link nav-text" style="color:white;text-shadow:0 0 4px black;" href="#background-2">EVENTS</a>
               </li>
               <!-- <li class="nav-item">
                 <a class="nav-link nav-text" href="gallery.html">GALLERY</a>
@@ -75,7 +75,7 @@
                                             <span>{{ $event->name }}</span>
                                         </div>
                                         <div class="col-12" style="padding-top:30px; padding-bottom:30px; font-family:'Open Sans Condensed', sans-serif; font-size:30px">
-                                            <span>12.10.2018</span>
+                                            <span>{{ $event->date }}</span>
                                         </div>
                                     </div>
                                 </div>
@@ -126,13 +126,13 @@
         </div>
 
    <!-- Optional JavaScript -->
-    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="/js/jquery-3.2.1.min.js"></script>
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> -->
     <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.js"></script> -->
-    <script type="text/javascript" src="js/scrolloverflow.min.js"></script>
-    <script type="text/javascript" src="js/jquery.fullpage.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="/js/scrolloverflow.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.fullpage.min.js"></script>
+    <script type="text/javascript" src="/js/script.js"></script>
     <!-- <script src="ckLine-master/jquery.ckLine.min.js"></script> -->
-    <script src="js/bootstrap.js"></script>
+    <script src="/js/bootstrap.js"></script>
   </body>
 </html>

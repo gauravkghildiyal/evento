@@ -39,7 +39,7 @@
               <!-- <li class="nav-item">
                 <a class="nav-link nav-text" href="gallery.html">GALLERY</a>
               </li> -->
-              <li class="nav-item sign-up-border" style="font-size: 40px; color:white">
+              <li class="nav-item sign-up-border" style="font-size: 20px; color:white">
                   <a href="{{ route('profile',['id'=>auth()->user()->id]) }}" style="color:white"><i class="fa fa-user" aria-hidden="true"></i></a>
               </li>
             </ul>
@@ -51,7 +51,7 @@
 
         <div class="jumbotron jumbotron-fluid" style="background: linear-gradient(to left, #0f0c29, #302b63, #24243e);color:white">
           <div class="container" style="text-align:center">
-            <h1 class="display-4">DASHBOARD </h1>
+            <h1 class="display-4">DASHBOARD</h1>
           </div>
         </div>
         <div class="container">

@@ -48,10 +48,12 @@
         <div class="jumbotron jumbotron-fluid" style="padding-top:30vh; background: linear-gradient(to left, #0f0c29, #302b63, #24243e);color:white; text-align:center; font-family: 'Roboto Condensed', sans-serif;">
             <div class="container">
                 <h1 class="display-4">{{ $event->name }}</h1>
+                @if($event->organiser->id != auth()->user()->id)
                 @if($event->visitors()->where("user_id",auth()->user()->id)->count() == 0)
                     <a href="{{ route('event_visit',['event_id'=>$event->id]) }}" class="btn btn-primary">Go to event</a>
                 @else
                     <a href="{{ route('event_unvisit',['event_id'=>$event->id]) }}" class="btn btn-danger">Unsubscribe</a>
+                @endif
                 @endif
                 @if($event->organiser->id == auth()->user()->id)
                     <a href="{{ route('presenters.create',['event_id'=>$event->id]) }}" class="btn btn-primary">Edit Presenters</a>
