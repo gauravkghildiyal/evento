@@ -13,3 +13,7 @@ Evento is an event management system developed in laravel. Users can create even
 ![Event](sample/sample7.png)
 ![Edit event](sample/sample8.png)
 
+## Built With
+
+* [Laravel](https://laravel.com/docs/5.5) - Backend framework
+* [jQuery](https://api.jquery.com/) - Frontend javascript api
